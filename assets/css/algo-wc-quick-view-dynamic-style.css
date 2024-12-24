@@ -1,0 +1,8 @@
+/* Dynamic CSS */
+.awc-product-img{
+    width: 100%;
+    /* height: 400px; */
+}
+.woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images {
+    /* opacity: 1 !important; */
+}

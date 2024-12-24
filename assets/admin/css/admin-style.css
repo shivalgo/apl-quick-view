@@ -1,0 +1,141 @@
+/* Styles for the switch toggle */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 5px;
+    background-color: white;
+    transition: .4s;
+    top: 2px;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Additional styling for the admin page */
+.algo-quick-view-wrap {
+    background: #f1f1f1;
+    /* padding: 20px; */
+    border-radius: 10px;
+}
+
+.algo-quick-view-wrap h2 {
+    /* color: #0073aa;
+    font-size: 24px; */
+}
+
+.nav-tab-wrapper .nav-tab {
+    background-color: #e5e5e5;
+    color: #555;
+}
+
+.nav-tab-wrapper .nav-tab-active {
+    background-color: #0073aa;
+    color: white;
+}
+
+form .form-table {
+    margin-top: 20px;
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="number"],
+input[type="date"],
+input[type="datetime-local"] {
+    width: 300px;
+    padding: 0px 0px 0px 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+textarea {
+    width: 50%;
+    padding: 0px 0px 0px 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+select {
+    width: 300px;
+    max-width: 50% !important;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="color"] {
+    /* width: 100%; */
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;
+}
+input[type="text"] {
+    min-height: 30px;
+    height: 32px;
+}
+.algo-quick-view-wrap .form-table th{
+    width: 300px !important;
+}
+.algo-quick-view-wrap .form-table th {
+    width: 300px !important;
+    padding: 0px;
+    vertical-align: middle;
+}
+.algo-quick-view-wrap .form-table td {
+    margin-bottom: 9px;
+    padding: 5px 10px;
+    line-height: 1.3;
+    vertical-align: middle;
+}
+h3.awp-wc-admin-heading {
+    background: #0073aa;
+    color: #fff;
+    padding: 5px;
+}
